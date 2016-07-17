@@ -7,10 +7,16 @@ using System.Threading;
 
 namespace EventTimer
 {
+    /// <summary>
+    /// Provides an event for executing methods at specified intervals.This class cannot be inherited.
+    /// </summary>
     public sealed class Timer
     {
         private int _time;
 
+        /// <summary>
+        /// Occurs when time is over.
+        /// </summary>
         public event EventHandler<TimeOverEventArgs> TimeOver = delegate { };
         public int Time
         {
@@ -27,6 +33,9 @@ namespace EventTimer
             }
         }
 
+        /// <summary>
+        /// Starts the countdown.
+        /// </summary>
         public void Start()
         {
             Thread.Sleep(_time * 1000);

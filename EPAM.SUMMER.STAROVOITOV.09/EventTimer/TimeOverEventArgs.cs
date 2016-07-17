@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace EventTimer
 {
+    /// <summary>
+    /// Provides data for the TimeOver event.
+    /// </summary>
     public sealed class TimeOverEventArgs: EventArgs
     {
         private int _time;
