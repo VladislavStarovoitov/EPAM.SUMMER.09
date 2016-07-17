@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using EventTimer;
 using static System.Console;
 
-namespace EventTimerTests
+namespace EventTimer.Tests
 {
     sealed class Clock
     {
