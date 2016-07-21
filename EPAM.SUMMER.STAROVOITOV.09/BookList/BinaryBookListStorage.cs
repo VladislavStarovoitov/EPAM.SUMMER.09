@@ -8,7 +8,7 @@ using System.IO;
 
 namespace BookList
 {
-    class BinaryBookListStorage : IBookListStorage
+    public class BinaryBookListStorage : IBookListStorage
     {
         public string FileName { get; }
 

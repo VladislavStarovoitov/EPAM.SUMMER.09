@@ -7,7 +7,7 @@ using BookShop;
 
 namespace BookList
 {
-    interface IBookListStorage
+    public interface IBookListStorage
     {
         List<Book> LoadBooks();
         void SaveBooks(IEnumerable<Book> books);

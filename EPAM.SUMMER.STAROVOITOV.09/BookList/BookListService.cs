@@ -41,5 +41,15 @@ namespace BookList
                 throw new ArgumentNullException();
             _books.Sort(comparer);
         }
+
+        public void LoadBooks(IBookListStorage storage)
+        {
+            _books = storage.LoadBooks();
+        }
+
+        public void SaveBooks(IBookListStorage storage)
+        {
+            storage.SaveBooks(_books);
+        }
     }
 }
