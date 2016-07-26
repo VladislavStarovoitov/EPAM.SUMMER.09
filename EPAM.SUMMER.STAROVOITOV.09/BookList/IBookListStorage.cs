@@ -9,6 +9,7 @@ namespace BookList
 {
     public interface IBookListStorage
     {
+        string FileName { get; }
         List<Book> LoadBooks();
         void SaveBooks(IEnumerable<Book> books);
     }
