@@ -7,6 +7,7 @@ using BookShop;
 
 namespace BookList
 {
+    [Serializable]
     public class BookListService
     {
         private List<Book> _books = new List<Book>();
